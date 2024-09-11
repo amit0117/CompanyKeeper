@@ -1,7 +1,10 @@
 // @ts-ignore
-const baseUrl = import.meta.env.VITE_BASE_URL;
+// const baseUrl = import.meta.env.VITE_BASE_URL;
 // @ts-ignore
-const apiKey = import.meta.env.VITE_API_KEY;
+// const apiKey = import.meta.env.VITE_API_KEY;
+
+const baseUrl = `https://api.recruitly.io`;
+const apiKey = `HIRE840770DDB2F381CA41BA84AA6A9ABE68B0EE`;
 import toast from 'react-hot-toast';
 import {
   SAVE_COMPANY_LIST,
