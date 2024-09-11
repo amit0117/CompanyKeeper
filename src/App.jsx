@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
 import { Loader } from '@mantine/core';
 import Header from './components/HeaderComponent';
-
+import HomePage from './components/HomePage';
 // Lazy loading components
 const Login = React.lazy(() => import('./components/Login'));
 // const Home = React.lazy(() => import('./components/Home'));
@@ -21,7 +21,7 @@ function App() {
           >
             <Routes>
 
-              {/* <Route path="/" element={<Home />} /> */}
+              <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/company" element={<CompanyScreen />} />
             </Routes>
