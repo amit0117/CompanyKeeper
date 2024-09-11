@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
 import { Loader } from '@mantine/core';
-import Header from './components/header';
+import Header from './components/HeaderComponent';
 
 // Lazy loading components
 const Login = React.lazy(() => import('./components/Login'));
