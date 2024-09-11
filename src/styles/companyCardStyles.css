@@ -1,0 +1,35 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  flex: 0 1 calc(100% - 2rem);
+}
+
+@media screen and (min-width: 32rem) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .card {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .card {
+    flex: 0 1 calc(33.3% - 1rem);
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .card {
+    flex: 0 1 calc(25% - 1rem);
+  }
+}
