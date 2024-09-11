@@ -6,7 +6,7 @@ import Header from './components/HeaderComponent';
 
 // Lazy loading components
 const Login = React.lazy(() => import('./components/Login'));
-const Home = React.lazy(() => import('./components/Home'));
+// const Home = React.lazy(() => import('./components/Home'));
 const CompanyScreen = React.lazy(() => import('./screen/CompanyScreen'));
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           >
             <Routes>
 
-              <Route path="/" element={<Home />} />
+              {/* <Route path="/" element={<Home />} /> */}
               <Route path="/login" element={<Login />} />
               <Route path="/company" element={<CompanyScreen />} />
             </Routes>
