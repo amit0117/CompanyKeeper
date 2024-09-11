@@ -2,11 +2,11 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
 import { Loader } from '@mantine/core';
-import Home from './components/Home.tsx'
-// @ts-ignore
-import Header from './components/Header.tsx';
+import Header from './components/header';
+
 // Lazy loading components
 const Login = React.lazy(() => import('./components/Login'));
+const Home = React.lazy(() => import('./components/Home'));
 const CompanyScreen = React.lazy(() => import('./screen/CompanyScreen'));
 
 function App() {
